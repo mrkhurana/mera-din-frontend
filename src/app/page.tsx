@@ -32,7 +32,11 @@ export default function Home() {
     setLoading(true)
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/v1/today', {
+      const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL
+      if (!apiBaseUrl) {
+        throw new Error('API base URL is not configured')
+      }
+      const response = await fetch(`${apiBaseUrl}/api/v1/today`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ dob }),
