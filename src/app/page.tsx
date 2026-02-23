@@ -78,17 +78,17 @@ export default function Home() {
               When were you born?
             </label>
             <p className="text-xs text-slate-400 mb-4">We use your birthdate to predict your day</p>
-            <div className="relative group w-full max-w-full">
+            <div className="relative group w-full overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-300\"></div>
               <input
                 id="dob"
                 type="date"
                 value={dob}
                 onChange={(e) => setDob(e.target.value)}
-                className="relative w-full max-w-full px-3 sm:px-5 py-4 bg-slate-900/80 backdrop-blur-sm border-2 border-slate-700 hover:border-slate-600 rounded-2xl text-white font-medium focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40 transition-all duration-300 shadow-xl hover:shadow-amber-400/20 cursor-pointer"
+                className="block w-full px-4 py-4 bg-slate-900/80 backdrop-blur-sm border-2 border-slate-700 hover:border-slate-600 rounded-2xl text-white font-medium focus:outline-none focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40 transition-all duration-300 shadow-xl hover:shadow-amber-400/20 cursor-pointer"
                 max={new Date().toISOString().split('T')[0]}
               />
-              <span className="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 text-xl pointer-events-none text-slate-400">📅</span>
+              <span className="absolute right-4 top-1/2 -translate-y-1/2 text-xl pointer-events-none text-slate-400">📅</span>
             </div>
           </div>
 
