@@ -70,7 +70,7 @@ export default function Home() {
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="mb-8">
-          <div className="mb-8\">
+          <div className="mb-8">
             <label
               htmlFor="dob"
               className="block text-base font-bold text-slate-100 mb-2"
