@@ -30,3 +30,27 @@ body {
 .fade-in {
   animation: fadeIn 0.5s ease-out;
 }
+
+/* Date input styling */
+input[type='date'] {
+  color-scheme: dark;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 2px;
+  opacity: 0.6;
+  filter: invert(1) brightness(1.2);
+  transition: all 0.3s ease;
+}
+
+input[type='date']:hover::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  filter: invert(1) brightness(1.4);
+}
+
+input[type='date']:focus::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  filter: invert(0.8) sepia(1) saturate(3) hue-rotate(40deg) brightness(1.3);
+}
