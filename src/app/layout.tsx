@@ -5,13 +5,14 @@ import './globals.css'
 const baseUrl = 'https://mera-din.vercel.app'
 
 export const metadata: Metadata = {
-  title: 'Mera Din Kaisa Jayega? | Daily Star Ratings',
-  description: 'Check today\'s star ratings for money, work, health, relationships, and luck. For entertainment purposes only.',
-  keywords: 'daily horoscope, star ratings, zodiac, astrology, daily forecast',
+  title: 'Mera Din | Today\'s Alignment',
+  description: 'Check your personal alignment score for today based on your birth details. For entertainment purposes only.',
+  keywords: 'daily alignment, moon sign, astrology, daily overview, personal score',
   authors: [{ name: 'Mera Din' }],
   openGraph: {
-    title: 'Mera Din Kaisa Jayega? | Daily Star Ratings',
-    description: 'Check today\'s star ratings for money, work, health, relationships, and luck.',
+    title: 'Mera Din | Today\'s Alignment',
+    description: 'Check your personal alignment score for today based on your birth details.',
+
     url: baseUrl,
     siteName: 'Mera Din',
     images: [
@@ -26,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mera Din Kaisa Jayega? | Daily Star Ratings',
-    description: 'Check today\'s star ratings for money, work, health, relationships, and luck.',
+    title: 'Mera Din | Today\'s Alignment',
+    description: 'Check your personal alignment score for today based on your birth details.',
   },
   icons: [
     {
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     },
   ],
   manifest: '/site.webmanifest',
-  canonicalUrl: baseUrl,
+  alternates: { canonical: baseUrl },
 }
 
 export default function RootLayout({
@@ -63,15 +64,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="overflow-x-hidden">
-      <body className="overflow-x-hidden bg-gray-950 text-white">
-        {children}
-        <footer className="text-center text-xs text-slate-500 py-4 px-4 mt-8">
-          Yeh page aaj ka din ko samajhne ke liye simple star rating format use karta hai.
-          Isme money, work, health, relationships aur luck ke alag sections me score dikhte hain.
-          Yeh ratings quick daily overview ke liye hain, taaki aap apne focus areas ko aasani se dekh saken.
-          Content ka tone neutral rakha gaya hai, jisse aap planning ke liye clear snapshot le saken.
-          Use with caution. Not advice or prediction.
+    <html lang="en" className="overflow-x-hidden h-full">
+      <body className="overflow-x-hidden bg-[#ede8de] text-stone-900 min-h-full flex flex-col">
+        <header className="w-full border-b border-stone-300 bg-white px-6 py-3 text-center">
+          <span className="text-base font-semibold text-stone-800 tracking-tight">
+            Mera Din Kaisa Jayega
+          </span>
+        </header>
+        <main className="flex-1 flex items-center justify-center px-4 py-10">
+          {children}
+        </main>
+        <footer className="text-center text-xs text-stone-400 py-6 px-4 mt-64 max-w-sm mx-auto">
+          Mera Din shows a daily alignment score based on your birth details. It is intended for informational and entertainment purposes only. The score does not constitute advice, prediction, or any factual claim about your day. Use with caution.
         </footer>
         <Analytics />
       </body>

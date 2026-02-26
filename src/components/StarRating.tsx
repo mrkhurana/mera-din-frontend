@@ -1,47 +1,29 @@
-interface StarRatingProps {
-  label: string
-  rating: number
+interface AlignmentStarsProps {
+  score: number // 0–10
 }
 
-const categoryIcons: { [key: string]: string } = {
-  Money: '💰',
-  Work: '💼',
-  Study: '📚',
-  Health: '💪',
-  Relationships: '❤️',
-  Luck: '🍀',
-}
-
-export function StarRating({ label, rating }: StarRatingProps) {
-  const fullStars = Math.floor(rating)
-  const hasHalfStar = rating % 1 !== 0
-  const icon = categoryIcons[label] || '⭐'
+function StarIcon({ filled }: { filled: boolean }) {
+  const starPath =
+    'M12 2l2.4 6.8H22l-6.2 4.5 2.4 6.8L12 15.6l-6.2 4.5 2.4-6.8L2 8.8h7.6z'
 
   return (
-    <div className="flex items-center justify-between py-4 px-2 hover:bg-slate-700/20 rounded-lg transition-colors">
-      <div className="flex items-center gap-2">
-        <span className="text-lg">{icon}</span>
-        <span className="text-sm font-semibold text-slate-200">{label}</span>
-      </div>
-      <div className="flex gap-1">
-        {Array.from({ length: 5 }).map((_, i) => {
-          const isFilled = i < fullStars
-          const isHalf = i === fullStars && hasHalfStar
+    <svg viewBox="0 0 24 24" className="w-6 h-6" aria-hidden="true">
+      <path d={starPath} fill={filled ? '#92400e' : '#d6d3d1'} />
+    </svg>
+  )
+}
 
-          return (
-            <span
-              key={i}
-              className={`text-lg transition-all duration-300 drop-shadow-lg ${
-                isFilled || isHalf
-                  ? 'text-yellow-300 drop-shadow-[0_0_4px_rgba(253,224,71,0.5)]'
-                  : 'text-slate-600'
-              }`}
-            >
-              ★
-            </span>
-          )
-        })}
+export function AlignmentStars({ score }: AlignmentStarsProps) {
+  return (
+    <div className="flex items-center gap-3">
+      <div className="flex gap-0.5" role="img" aria-label={`${score} out of 10`}>
+        {Array.from({ length: 10 }).map((_, i) => (
+          <StarIcon key={i} filled={i < score} />
+        ))}
       </div>
+      <span className="text-xl font-bold text-stone-800">
+        {score} <span className="text-stone-400 font-normal text-base">/ 10</span>
+      </span>
     </div>
   )
 }
