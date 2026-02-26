@@ -102,7 +102,7 @@ export default function Home() {
         {/* Header */}
         <div className="mb-10 text-center">
           <p className="text-sm font-semibold text-stone-500">
-            {result ? "Today\u2019s Alignment" : 'Fill in the details to find out how your day will go!'}
+            {result ? "Your day at a glance" : 'Fill in the details to find out how your day will go!'}
           </p>
         </div>
 
@@ -235,7 +235,7 @@ export default function Home() {
                 onClick={() => {
                   const stars = '★'.repeat(result.alignment_score) + '☆'.repeat(10 - result.alignment_score)
                   const lines = result.context_lines.join('\n\n')
-                  const message = `Mera Din Kaisa Jayega?\n\n${result.name} — ${result.moon_sign}\nAlignment: ${stars} ${result.alignment_score}/10\n\n${lines}\n\nCheck yours at meradinkaisajayega.online`
+                  const message = `\n\n${result.name} — ${result.moon_sign}\nAlignment: ${stars} ${result.alignment_score}/10\n\n${lines}\n\nCheck yours at meradinkaisajayega.online`
                   window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank')
                 }}
                 className="w-full px-4 py-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-sm font-medium rounded-lg transition-colors"
