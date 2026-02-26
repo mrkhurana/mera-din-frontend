@@ -138,7 +138,7 @@ export default function Home() {
                   value={form.dob}
                   onChange={handleChange}
                   max={new Date().toISOString().split('T')[0]}
-                  className={inputClass}
+                  className={`${inputClass} uppercase`}
                   required
                 />
               </div>
