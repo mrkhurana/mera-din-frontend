@@ -12,45 +12,24 @@ html,
 body {
   height: 100%;
   font-family: system-ui, -apple-system, sans-serif;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  background-attachment: fixed;
+  background-color: #ede8de;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Date and time input styling */
+input[type='date'],
+input[type='time'] {
+  color-scheme: light;
 }
 
-.fade-in {
-  animation: fadeIn 0.5s ease-out;
-}
-
-/* Date input styling */
-input[type='date'] {
-  color-scheme: dark;
-}
-
-input[type='date']::-webkit-calendar-picker-indicator {
+input[type='date']::-webkit-calendar-picker-indicator,
+input[type='time']::-webkit-calendar-picker-indicator {
   cursor: pointer;
   border-radius: 4px;
   margin-right: 2px;
-  opacity: 0.6;
-  filter: invert(1) brightness(1.2);
-  transition: all 0.3s ease;
+  opacity: 0.55;
 }
 
-input[type='date']:hover::-webkit-calendar-picker-indicator {
-  opacity: 1;
-  filter: invert(1) brightness(1.4);
-}
-
-input[type='date']:focus::-webkit-calendar-picker-indicator {
-  opacity: 1;
-  filter: invert(0.8) sepia(1) saturate(3) hue-rotate(40deg) brightness(1.3);
+input[type='date']:hover::-webkit-calendar-picker-indicator,
+input[type='time']:hover::-webkit-calendar-picker-indicator {
+  opacity: 0.9;
 }
