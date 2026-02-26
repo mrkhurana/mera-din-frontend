@@ -15,7 +15,7 @@ function StarIcon({ filled }: { filled: boolean }) {
 
 export function AlignmentStars({ score }: AlignmentStarsProps) {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex flex-col gap-2">
       <div className="flex gap-0.5" role="img" aria-label={`${score} out of 10`}>
         {Array.from({ length: 10 }).map((_, i) => (
           <StarIcon key={i} filled={i < score} />
