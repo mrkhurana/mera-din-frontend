@@ -2,10 +2,39 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
+const baseUrl = 'https://mera-din.vercel.app'
+
 export const metadata: Metadata = {
   title: 'Mera Din Kaisa Jayega? | Daily Star Ratings',
-  description: 'Check today’s star ratings for money, work, health, relationships, and luck. For entertainment purposes only.',
+  description: 'Check today\'s star ratings for money, work, health, relationships, and luck. For entertainment purposes only.',
+  keywords: 'daily horoscope, star ratings, zodiac, astrology, daily forecast',
+  authors: [{ name: 'Mera Din' }],
+  openGraph: {
+    title: 'Mera Din Kaisa Jayega? | Daily Star Ratings',
+    description: 'Check today\'s star ratings for money, work, health, relationships, and luck.',
+    url: baseUrl,
+    siteName: 'Mera Din',
+    images: [
+      {
+        url: `${baseUrl}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+        alt: 'Mera Din Logo',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mera Din Kaisa Jayega? | Daily Star Ratings',
+    description: 'Check today\'s star ratings for money, work, health, relationships, and luck.',
+  },
   icons: [
+    {
+      rel: 'icon',
+      type: 'image/svg+xml',
+      url: '/favicon.svg',
+    },
     {
       rel: 'icon',
       type: 'image/png',
@@ -25,6 +54,7 @@ export const metadata: Metadata = {
     },
   ],
   manifest: '/site.webmanifest',
+  canonicalUrl: baseUrl,
 }
 
 export default function RootLayout({
