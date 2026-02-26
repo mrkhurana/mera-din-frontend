@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const baseUrl = 'https://mera-din.vercel.app'
+const baseUrl = 'https://meradinkaisajayega.online'
 
 export const metadata: Metadata = {
   title: 'Mera Din | Today\'s Alignment',
