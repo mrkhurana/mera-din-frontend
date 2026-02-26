@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '',
     },
-    sitemap: 'https://mera-din.vercel.app/sitemap.xml',
+    sitemap: 'https://meradinkaisajayega.online/sitemap.xml',
   }
 }
