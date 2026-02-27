@@ -1,34 +1,37 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
+import { Header } from '@/components/Header'
 import './globals.css'
 
 const baseUrl = 'https://meradinkaisajayega.online'
 
 export const metadata: Metadata = {
-  title: 'Mera Din | Today\'s Alignment',
-  description: 'Check your personal alignment score for today based on your birth details. For entertainment purposes only.',
-  keywords: 'daily alignment, moon sign, astrology, daily overview, personal score',
+  title: 'Mera Din Kaisa Jayega | Daily Alignment Insight',
+  description:
+    'Enter your birth details to get a personalised daily alignment score based on your Moon sign. Informational only — no predictions.',
+  keywords: 'daily alignment, moon sign, birth chart, alignment score, mera din kaisa jayega',
   authors: [{ name: 'Mera Din' }],
   openGraph: {
-    title: 'Mera Din | Today\'s Alignment',
-    description: 'Check your personal alignment score for today based on your birth details.',
-
+    title: 'Mera Din Kaisa Jayega | Daily Alignment Insight',
+    description:
+      'Enter your birth details to get a personalised daily alignment score based on your Moon sign. Informational only — no predictions.',
     url: baseUrl,
-    siteName: 'Mera Din',
+    siteName: 'Mera Din Kaisa Jayega',
     images: [
       {
         url: `${baseUrl}/android-chrome-512x512.png`,
         width: 512,
         height: 512,
-        alt: 'Mera Din Logo',
+        alt: 'Mera Din Kaisa Jayega',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mera Din | Today\'s Alignment',
-    description: 'Check your personal alignment score for today based on your birth details.',
+    title: 'Mera Din Kaisa Jayega | Daily Alignment Insight',
+    description:
+      'Enter your birth details to get a personalised daily alignment score based on your Moon sign. Informational only — no predictions.',
   },
   icons: [
     {
@@ -66,16 +69,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden h-full">
       <body className="overflow-x-hidden bg-[#ede8de] text-stone-900 min-h-full flex flex-col">
-        <header className="w-full border-b border-stone-300 bg-white px-6 py-3 text-center">
-          <span className="text-base font-semibold text-stone-800 tracking-tight">
-            Mera Din Kaisa Jayega
-          </span>
-        </header>
+        <Header />
         <main className="flex-1 flex items-center justify-center px-4 py-10">
           {children}
         </main>
         <footer className="text-center text-xs text-stone-400 py-6 px-4 mt-64 max-w-sm mx-auto">
-          Mera Din shows a daily alignment score based on your birth details. It is intended for informational and entertainment purposes only. The score does not constitute advice, prediction, or any factual claim about your day. Use with caution.
+          Mera Din provides alignment scores and compatibility readings based on birth details. All results are intended for informational purposes only. They do not constitute advice, prediction, or any factual claim. Use with caution.
         </footer>
         <Analytics />
       </body>
