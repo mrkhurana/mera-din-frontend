@@ -1,27 +1,26 @@
-# Mera Din Kaisa Jayega - Frontend
+# Mera Din Kaisa Jayega — Frontend
 
-A minimal, mobile-first Next.js frontend for predicting how your day will be.
+Mobile-first Next.js frontend for [meradinkaisajayega.online](https://meradinkaisajayega.online) — enter your birth details and get a personal cosmic alignment score for today.
 
 ## Features
 
-- **Mobile-first design** - Works perfectly on all devices
-- **Single-page application** - Fast and lightweight
-- **Dark theme** - Easy on the eyes
-- **Star ratings** - Visual feedback with ★ symbols
-- **Client-side form handling** - No server-side processing needed
-- **Zero tracking** - No cookies, localStorage, or analytics
+- **Mobile-first design** — responsive and lightweight
+- **Star rating display** — visual 10-point alignment score
+- **WhatsApp sharing** — share your result in one tap
+- **SEO-ready** — sitemap, robots.txt, Open Graph, and favicon all configured
+- **Vercel Analytics** — privacy-friendly usage insights
 
 ## Tech Stack
 
-- **Next.js 14** - React framework with App Router
-- **Tailwind CSS** - Utility-first CSS framework
-- **TypeScript** - Type-safe development
+- **Next.js 14** — App Router
+- **Tailwind CSS** — utility-first styling
+- **TypeScript** — fully typed
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ and npm/yarn
+- Node.js 18+ and npm
 
 ### Installation
 
@@ -42,45 +41,34 @@ npm run build
 npm start
 ```
 
-## Deployment
+## Environment Variables
 
-### Deploy to Vercel
-
-The easiest way to deploy is using [Vercel](https://vercel.com):
-
-```bash
-npm i -g vercel
-vercel
-```
-
-Or connect your GitHub repository to Vercel for automatic deployments.
-
-### Environment Variables
-
-If you need to point to a different API endpoint, create a `.env.local` file:
+Create a `.env.local` file and set your backend API URL:
 
 ```env
-NEXT_PUBLIC_API_URL=https://your-api-domain.com
+NEXT_PUBLIC_API_BASE_URL=https://your-api-domain.com
 ```
-
-Then update the fetch URL in `src/app/page.tsx`.
 
 ## API Integration
 
-The frontend is configured to use your backend API at `http://localhost:8000`:
-
-- **Endpoint**: `POST http://localhost:8000/api/v1/today`
-- **Request**: `{ "dob": "YYYY-MM-DD" }`
+- **Endpoint**: `POST /api/v1/today`
+- **Request body**:
+  ```json
+  {
+    "name": "string",
+    "dob": "YYYY-MM-DD",
+    "tob": "HH:MM",
+    "place_of_birth": "City"
+  }
+  ```
 - **Response**:
   ```json
   {
     "date": "YYYY-MM-DD",
-    "money": 3.5,
-    "work": 4,
-    "study": 2.5,
-    "health": 5,
-    "relationships": 3,
-    "luck": 4.5
+    "name": "string",
+    "moon_sign": "string",
+    "alignment_score": 7,
+    "context_lines": ["string", "string"]
   }
   ```
 
@@ -89,19 +77,20 @@ The frontend is configured to use your backend API at `http://localhost:8000`:
 ```
 src/
 ├── app/
-│   ├── layout.tsx       # Root layout with metadata
-│   ├── page.tsx         # Main page with form and results
-│   └── globals.css      # Tailwind styles
+│   ├── favicon.ico        # Favicon (served by Next.js App Router)
+│   ├── layout.tsx         # Root layout with metadata & OG tags
+│   ├── page.tsx           # Main page — form + results
+│   ├── globals.css        # Tailwind base styles
+│   ├── robots.ts          # robots.txt generation
+│   └── sitemap.ts         # sitemap.xml generation
 └── components/
-    └── StarRating.tsx   # Star rating display component
+    ├── Header.tsx         # Centered brand header with slide-in nav drawer
+    └── StarRating.tsx     # 10-star alignment score component
 ```
 
-## Performance
+## Deployment
 
-- **Minimal bundle size** - No unnecessary dependencies
-- **Fast load times** - Optimized images and code splitting
-- **Mobile optimized** - Touch-friendly interface
-- **Zero JavaScript runtime** - Uses Next.js static optimization
+Deployed on [Vercel](https://vercel.com). Connect your GitHub repo for automatic deployments on push.
 
 ## License
 

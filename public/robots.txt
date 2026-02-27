@@ -1,2 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /moon-signs
+Allow: /zodiac
+Allow: /compatibility
+Disallow: /api/
+
+Sitemap: https://meradinkaisajayega.online/sitemap.xml

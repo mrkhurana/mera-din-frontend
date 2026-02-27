@@ -64,6 +64,10 @@ export default function Home() {
       setError('Name must be at least 3 characters.')
       return
     }
+    if (place_of_birth.trim().length < 3) {
+      setError('Place of birth must be at least 3 characters.')
+      return
+    }
 
     setLoading(true)
 
@@ -84,13 +88,24 @@ export default function Home() {
       })
 
       if (!response.ok) {
-        throw new Error('Failed to fetch results')
+        let message = 'Unable to fetch your results. Please try again.'
+        try {
+          const errData = await response.json()
+          if (errData?.detail) message = errData.detail
+        } catch {
+          // use default message
+        }
+        throw new Error(message)
       }
 
       const data: ApiResponse = await response.json()
       setResult(data)
-    } catch (_err) {
-      setError('Unable to fetch your results. Please try again.')
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : 'Unable to fetch your results. Please try again.'
+      )
     } finally {
       setLoading(false)
     }
@@ -233,9 +248,14 @@ export default function Home() {
               <button
                 type="button"
                 onClick={() => {
-                  const stars = '★'.repeat(result.alignment_score) + '☆'.repeat(10 - result.alignment_score)
                   const lines = result.context_lines.join('\n\n')
-                  const message = `\n\n${result.name} — ${result.moon_sign}\nAlignment: ${stars} ${result.alignment_score}/10\n\n${lines}\n\nCheck yours at meradinkaisajayega.online`
+                  const message = [
+                    `🌙 Today's Alignment`,
+                    `${result.name} — ${result.moon_sign}`,
+                    `⭐ Score: ${result.alignment_score} / 10`,
+                    lines,
+                    `✨ Check yours at meradinkaisajayega.online`,
+                  ].join('\n\n')
                   window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank')
                 }}
                 className="w-full px-4 py-2.5 bg-[#25D366] hover:bg-[#1ebe5d] text-white text-sm font-medium rounded-lg transition-colors"
