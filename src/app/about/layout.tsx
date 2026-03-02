@@ -8,7 +8,7 @@ const aboutSchema = {
   name: 'About Where Sky Aligns',
   url: `${baseUrl}/about`,
   description:
-    'Where Sky Aligns is a personal alignment tool that uses your Moon sign and celestial cycles to generate a structured daily alignment reading. Free, informational, and based on birth details.',
+    'Where Sky Aligns is a personal alignment space grounded in celestial cycles. We interpret your Moon sign and natal chart to offer a structured daily reading — interpretive, not predictive.',
   inLanguage: 'en',
   isPartOf: {
     '@type': 'WebSite',
@@ -22,15 +22,15 @@ const aboutSchema = {
 }
 
 export const metadata: Metadata = {
-  title: 'About Where Sky Aligns | Daily Alignment Tool Based on Moon Sign',
+  title: 'About Where Sky Aligns | Personal Alignment Space Grounded in Celestial Cycles',
   description:
-    'Where Sky Aligns uses your birth date, time, and place to calculate your Moon sign and generate a structured daily alignment score. Free, informational, and based on established astrological frameworks.',
+    'Where Sky Aligns is a personal alignment space grounded in celestial cycles. Enter your birth details to receive a structured daily alignment reading based on your Moon sign — interpretive, not predictive.',
   keywords:
-    'about where sky aligns, daily alignment tool, moon sign calculator, celestial cycle reading, personal alignment score, moon sign meaning, astrological alignment, birth chart alignment',
+    'about where sky aligns, daily alignment, moon sign calculator, celestial cycle reading, personal alignment score, moon sign meaning, astrological alignment, birth chart alignment, alignment space',
   openGraph: {
-    title: 'About Where Sky Aligns | Daily Alignment Tool Based on Moon Sign',
+    title: 'About Where Sky Aligns | Personal Alignment Space Grounded in Celestial Cycles',
     description:
-      'Where Sky Aligns uses your birth date, time, and place to calculate your Moon sign and generate a structured daily alignment score. Free, informational, and based on established astrological frameworks.',
+      'Where Sky Aligns is a personal alignment space grounded in celestial cycles. Enter your birth details to receive a structured daily alignment reading based on your Moon sign — interpretive, not predictive.',
     url: `${baseUrl}/about`,
     siteName: 'Where Sky Aligns',
     images: [
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Where Sky Aligns | Daily Alignment Tool Based on Moon Sign',
+    title: 'About Where Sky Aligns | Personal Alignment Space Grounded in Celestial Cycles',
     description:
-      'Where Sky Aligns uses your birth date, time, and place to calculate your Moon sign and generate a structured daily alignment score. Free, informational, and based on established astrological frameworks.',
+      'Where Sky Aligns is a personal alignment space grounded in celestial cycles. Enter your birth details to receive a structured daily alignment reading based on your Moon sign — interpretive, not predictive.',
   },
   alternates: { canonical: `${baseUrl}/about` },
 }

@@ -5,11 +5,11 @@ const baseUrl = 'https://whereskyaligns.com'
 export const metadata: Metadata = {
   title: 'Where Sky Aligns | Terms of Service',
   description:
-    'Read the Where Sky Aligns Terms of Service. By using this site you agree to these terms, which govern how our astrological tools and content may be used.',
+    'Read the Where Sky Aligns Terms of Service. By using this site you agree to these terms, which govern how our astrological features and content may be used.',
   openGraph: {
     title: 'Where Sky Aligns | Terms of Service',
     description:
-      'Read the Where Sky Aligns Terms of Service. By using this site you agree to these terms, which govern how our astrological tools and content may be used.',
+      'Read the Where Sky Aligns Terms of Service. By using this site you agree to these terms, which govern how our astrological features and content may be used.',
     url: `${baseUrl}/terms-of-service`,
     siteName: 'Where Sky Aligns',
     type: 'website',

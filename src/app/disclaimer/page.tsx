@@ -13,7 +13,7 @@ export default function DisclaimerPage() {
             1. Informational Purpose Only
           </h2>
           <p className="text-sm leading-relaxed text-stone-600 mb-3">
-            All content, tools, and results on Where Sky Aligns — including alignment scores,
+            All content, readings, and results on Where Sky Aligns — including alignment scores,
             Moon sign descriptions, compatibility readings, and zodiac reference material — are
             provided for informational purposes only.
           </p>
