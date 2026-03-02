@@ -392,7 +392,7 @@ export default function CompatibilityPage() {
                   `${personA.name} & ${personB.name}`,
                   `❤️ Score: ${result.compatibility_score} / 100`,
                   summaryText,
-                  `✨ Check yours at meradinkaisajayega.online/compatibility`,
+                  `✨ Check yours at whereskyaligns.com/compatibility`,
                 ].join('\n\n')
                 window.open(
                   `https://wa.me/?text=${encodeURIComponent(message)}`,

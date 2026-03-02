@@ -3,35 +3,35 @@ import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/Header'
 import './globals.css'
 
-const baseUrl = 'https://meradinkaisajayega.online'
+const baseUrl = 'https://whereskyaligns.com'
 
 export const metadata: Metadata = {
-  title: 'Mera Din Kaisa Jayega | Daily Alignment Insight',
+  title: 'Where Sky Aligns | Personal Alignment Through Celestial Cycles',
   description:
-    'Enter your birth details to get a personalised daily alignment score based on your Moon sign. Informational only — no predictions.',
-  keywords: 'daily alignment, moon sign, birth chart, alignment score, mera din kaisa jayega',
-  authors: [{ name: 'Mera Din' }],
+    'Explore your personal alignment through celestial cycles. Enter your birth details to receive a structured alignment reading based on your Moon sign and rhythmic patterns.',
+  keywords: 'daily alignment, moon sign, birth chart, celestial cycles, where sky aligns, compatibility, alignment patterns',
+  authors: [{ name: 'Where Sky Aligns' }],
   openGraph: {
-    title: 'Mera Din Kaisa Jayega | Daily Alignment Insight',
+    title: 'Where Sky Aligns | Personal Alignment Through Celestial Cycles',
     description:
-      'Enter your birth details to get a personalised daily alignment score based on your Moon sign. Informational only — no predictions.',
+      'Explore your personal alignment through celestial cycles. Enter your birth details to receive a structured alignment reading based on your Moon sign and rhythmic patterns.',
     url: baseUrl,
-    siteName: 'Mera Din Kaisa Jayega',
+    siteName: 'Where Sky Aligns',
     images: [
       {
         url: `${baseUrl}/android-chrome-512x512.png`,
         width: 512,
         height: 512,
-        alt: 'Mera Din Kaisa Jayega',
+        alt: 'Where Sky Aligns',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mera Din Kaisa Jayega | Daily Alignment Insight',
+    title: 'Where Sky Aligns | Personal Alignment Through Celestial Cycles',
     description:
-      'Enter your birth details to get a personalised daily alignment score based on your Moon sign. Informational only — no predictions.',
+      'Explore your personal alignment through celestial cycles. Enter your birth details to receive a structured alignment reading based on your Moon sign and rhythmic patterns.',
   },
   icons: [
     {
@@ -73,8 +73,14 @@ export default function RootLayout({
         <main className="flex-1 flex items-center justify-center px-4 py-10">
           {children}
         </main>
-        <footer className="text-center text-xs text-stone-400 py-6 px-4 mt-64 max-w-sm mx-auto">
-          Mera Din provides alignment scores and compatibility readings based on birth details. All results are intended for informational purposes only. They do not constitute advice, prediction, or any factual claim. Use with caution.
+        <footer className="text-center text-xs text-stone-400 py-6 px-4 mt-64 border-t border-stone-200">
+          <p className="mb-1">&copy; 2026 Where Sky Aligns. All rights reserved.</p>
+          <p className="mb-2">Alignment scores and compatibility readings are based on birth details and are intended for informational purposes only. They do not constitute advice, prediction, or any factual claim.</p>
+          <div className="flex justify-center gap-4 mt-2">
+            <a href="/privacy-policy" className="hover:text-stone-600 transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" className="hover:text-stone-600 transition-colors">Terms of Service</a>
+            <a href="/disclaimer" className="hover:text-stone-600 transition-colors">Disclaimer</a>
+          </div>
         </footer>
         <Analytics />
       </body>

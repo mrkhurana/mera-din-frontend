@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-const baseUrl = 'https://meradinkaisajayega.online'
+const baseUrl = 'https://whereskyaligns.com'
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -50,30 +50,30 @@ const faqSchema = {
 }
 
 export const metadata: Metadata = {
-  title: 'Moon Signs Explained | Emotional Astrology Guide',
+  title: 'Where Sky Aligns | Moon Signs Explained',
   description:
-    'Find your Moon sign and explore all 12 placements — emotional patterns, reaction styles, and relationship tone. Free Moon sign calculator included.',
+    'Find your Moon sign and explore all 12 placements — emotional patterns, cycles, and relational rhythms. Free Moon sign calculator included.',
   keywords:
-    'moon sign, moon sign calculator, moon in aries, moon sign guide, emotional astrology, birth chart moon, mera din',
+    'moon sign, moon sign calculator, moon in aries, moon sign guide, emotional astrology, birth chart moon, where sky aligns',
   openGraph: {
-    title: 'Moon Signs Explained | Emotional Astrology Guide',
+    title: 'Where Sky Aligns | Moon Signs Explained',
     description:
-      'Find your Moon sign and explore all 12 placements — emotional patterns, reaction styles, and relationship tone. Free Moon sign calculator included.',
+      'Find your Moon sign and explore all 12 placements — emotional patterns, cycles, and relational rhythms. Free Moon sign calculator included.',
     url: `${baseUrl}/moon-signs`,
-    siteName: 'Mera Din Kaisa Jayega',
+    siteName: 'Where Sky Aligns',
     images: [
       {
         url: `${baseUrl}/android-chrome-512x512.png`,
         width: 512,
         height: 512,
-        alt: 'Mera Din Kaisa Jayega',
+        alt: 'Where Sky Aligns',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Moon Signs Explained | Emotional Astrology Guide',
+    title: 'Where Sky Aligns | Moon Signs Explained',
     description:
       'Find your Moon sign and explore all 12 placements — emotional patterns, reaction styles, and relationship tone.',
   },

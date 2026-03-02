@@ -254,7 +254,7 @@ export default function Home() {
                     `${result.name} — ${result.moon_sign}`,
                     `⭐ Score: ${result.alignment_score} / 10`,
                     lines,
-                    `✨ Check yours at meradinkaisajayega.online`,
+                    `✨ Check yours at whereskyaligns.com`,
                   ].join('\n\n')
                   window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank')
                 }}

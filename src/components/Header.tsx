@@ -78,7 +78,7 @@ export function Header() {
             onClick={() => setDrawerOpen(false)}
             className={`${brandFont.className} absolute left-1/2 -translate-x-1/2 text-[1.45rem] leading-tight tracking-[0.01em] text-stone-900 hover:text-yellow-800 transition-colors select-none whitespace-nowrap`}
           >
-            Mera Din Kaisa Jayega
+            Where Sky Aligns
           </Link>
 
           {/* Right — empty spacer to keep brand centered */}
@@ -142,9 +142,9 @@ export function Header() {
         {/* Drawer footer */}
         <div className="px-5 py-5 border-t border-stone-100 shrink-0">
           <p className={`${brandFont.className} text-base text-stone-400 tracking-wide`}>
-            Mera Din Kaisa Jayega
+            Where Sky Aligns
           </p>
-          <p className="text-[11px] text-stone-400 mt-0.5">meradinkaisajayega.online</p>
+          <p className="text-[11px] text-stone-400 mt-0.5">whereskyaligns.com</p>
         </div>
       </div>
     </>
