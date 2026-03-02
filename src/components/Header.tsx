@@ -17,6 +17,7 @@ const navItems = [
   { label: 'Moon Signs Guide', href: '/moon-signs' },
   { label: 'Zodiac Overview', href: '/zodiac' },
   { label: 'Weekly Outlook', href: '/weekly', comingSoon: true },
+  { label: 'About', href: '/about' },
 ]
 
 function HamburgerIcon() {
