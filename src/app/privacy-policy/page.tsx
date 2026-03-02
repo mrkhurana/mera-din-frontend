@@ -4,7 +4,6 @@ export default function PrivacyPolicyPage() {
       <div className="max-w-2xl mx-auto">
 
         {/* Header */}
-        <p className="text-xs text-stone-400 uppercase tracking-widest mb-3">Legal</p>
         <h1 className="text-2xl font-semibold text-stone-800 mb-1">Privacy Policy</h1>
         <p className="text-xs text-stone-400 mb-10">Last updated: 1 March 2026</p>
 
@@ -128,47 +127,15 @@ export default function PrivacyPolicyPage() {
           </p>
         </div>
 
-        {/* 7. International Users */}
+        {/* 7. Changes to This Policy */}
         <div className="mb-10">
           <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            7. International Users
-          </h2>
-          <p className="text-sm leading-relaxed text-stone-600">
-            Where Sky Aligns is accessible globally. If you access the site from outside the
-            country where our servers are located, your information may be transferred across
-            borders. By using the site, you acknowledge that your information may be processed
-            in a country with different privacy laws to your own. We handle all data in
-            accordance with applicable law.
-          </p>
-        </div>
-
-        {/* 8. Changes to This Policy */}
-        <div className="mb-10">
-          <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            8. Changes to This Policy
+            7. Changes to This Policy
           </h2>
           <p className="text-sm leading-relaxed text-stone-600">
             We reserve the right to update this Privacy Policy from time to time. Any changes
             will be reflected on this page with a revised date at the top. Continued use of the
             site after changes are posted constitutes your acceptance of the revised policy.
-          </p>
-        </div>
-
-        {/* 9. Contact */}
-        <div className="mb-10">
-          <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            9. Contact
-          </h2>
-          <p className="text-sm leading-relaxed text-stone-600">
-            If you have any questions or concerns about this Privacy Policy or how your
-            information is handled, please reach out to us at{' '}
-            <a
-              href="mailto:support@whereskyaligns.com"
-              className="text-yellow-800 hover:text-yellow-900 underline underline-offset-2 transition-colors"
-            >
-              support@whereskyaligns.com
-            </a>
-            .
           </p>
         </div>
 
