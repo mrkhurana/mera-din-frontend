@@ -4,7 +4,6 @@ export default function TermsOfServicePage() {
       <div className="max-w-2xl mx-auto">
 
         {/* Header */}
-        <p className="text-xs text-stone-400 uppercase tracking-widest mb-3">Legal</p>
         <h1 className="text-2xl font-semibold text-stone-800 mb-1">Terms of Service</h1>
         <p className="text-xs text-stone-400 mb-10">Last updated: 1 March 2026</p>
 
@@ -128,35 +127,7 @@ export default function TermsOfServicePage() {
           </p>
         </div>
 
-        {/* 9. Governing Law */}
-        <div className="mb-10">
-          <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            9. Governing Law
-          </h2>
-          <p className="text-sm leading-relaxed text-stone-600">
-            These Terms of Service shall be governed by and construed in accordance with
-            applicable law. Any disputes arising from these terms or your use of the Site
-            shall be subject to the exclusive jurisdiction of the courts applicable to the
-            operators of Where Sky Aligns.
-          </p>
-        </div>
 
-        {/* 10. Contact */}
-        <div className="mb-10">
-          <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            10. Contact
-          </h2>
-          <p className="text-sm leading-relaxed text-stone-600">
-            If you have any questions about these Terms of Service, you can reach us at{' '}
-            <a
-              href="mailto:support@whereskyaligns.com"
-              className="text-yellow-800 hover:text-yellow-900 underline underline-offset-2 transition-colors"
-            >
-              support@whereskyaligns.com
-            </a>
-            .
-          </p>
-        </div>
 
       </div>
     </section>

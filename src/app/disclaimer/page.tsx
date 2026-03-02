@@ -4,7 +4,6 @@ export default function DisclaimerPage() {
       <div className="max-w-2xl mx-auto">
 
         {/* Header */}
-        <p className="text-xs text-stone-400 uppercase tracking-widest mb-3">Legal</p>
         <h1 className="text-2xl font-semibold text-stone-800 mb-1">Disclaimer</h1>
         <p className="text-xs text-stone-400 mb-10">Last updated: 1 March 2026</p>
 
@@ -74,40 +73,7 @@ export default function DisclaimerPage() {
           </p>
         </div>
 
-        {/* 5. Interpretive Framework */}
-        <div className="mb-10">
-          <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            5. Interpretive Framework
-          </h2>
-          <p className="text-sm leading-relaxed text-stone-600 mb-3">
-            The astrological system used on this Site — including sign placements, elemental
-            associations, and compatibility frameworks — represents a structured interpretive
-            tradition. It is not based on empirical scientific research and makes no claim to
-            scientific validity.
-          </p>
-          <p className="text-sm leading-relaxed text-stone-600">
-            Our intention is to present these frameworks clearly and accessibly, without
-            overstating what they can offer. They are tools for reflection, not roadmaps for
-            decision-making.
-          </p>
-        </div>
 
-        {/* 6. Contact */}
-        <div className="mb-10">
-          <h2 className="text-base font-semibold text-stone-700 mb-3 pb-1 border-b border-stone-200">
-            6. Questions
-          </h2>
-          <p className="text-sm leading-relaxed text-stone-600">
-            If you have any questions about this Disclaimer, please contact us at{' '}
-            <a
-              href="mailto:support@whereskyaligns.com"
-              className="text-yellow-800 hover:text-yellow-900 underline underline-offset-2 transition-colors"
-            >
-              support@whereskyaligns.com
-            </a>
-            .
-          </p>
-        </div>
 
       </div>
     </section>
