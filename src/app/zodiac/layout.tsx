@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-const baseUrl = 'https://meradinkaisajayega.online'
+const baseUrl = 'https://whereskyaligns.com'
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -50,32 +50,32 @@ const faqSchema = {
 }
 
 export const metadata: Metadata = {
-  title: 'Zodiac Overview | 12 Signs, Elements & Modalities',
+  title: 'Where Sky Aligns | Zodiac Framework & Cycles',
   description:
-    'A structured reference for the 12-sign zodiac — elements, modalities, tropical vs sidereal systems, and how sign placements underpin alignment and compatibility.',
+    'A structured reference for the 12-sign zodiac — elements, modalities, and cyclical patterns. Understand how sign placements relate to alignment and compatibility rhythms.',
   keywords:
-    'zodiac signs, 12 zodiac signs, zodiac elements, zodiac modalities, tropical zodiac, sidereal zodiac, aries to pisces, zodiac overview',
+    'zodiac signs, 12 zodiac signs, zodiac elements, zodiac modalities, tropical zodiac, sidereal zodiac, aries to pisces, zodiac cycles, where sky aligns',
   openGraph: {
-    title: 'Zodiac Overview | 12 Signs, Elements & Modalities',
+    title: 'Where Sky Aligns | Zodiac Framework & Cycles',
     description:
-      'A structured reference for the 12-sign zodiac — elements, modalities, tropical vs sidereal systems, and how sign placements underpin alignment and compatibility.',
+      'A structured reference for the 12-sign zodiac — elements, modalities, and cyclical patterns. Understand how sign placements relate to alignment and compatibility rhythms.',
     url: `${baseUrl}/zodiac`,
-    siteName: 'Mera Din Kaisa Jayega',
+    siteName: 'Where Sky Aligns',
     images: [
       {
         url: `${baseUrl}/android-chrome-512x512.png`,
         width: 512,
         height: 512,
-        alt: 'Mera Din Kaisa Jayega',
+        alt: 'Where Sky Aligns',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zodiac Overview | 12 Signs, Elements & Modalities',
+    title: 'Where Sky Aligns | Zodiac Framework & Cycles',
     description:
-      'A structured reference for the 12-sign zodiac — elements, modalities, tropical vs sidereal systems, and how sign placements underpin alignment and compatibility.',
+      'A structured reference for the 12-sign zodiac — elements, modalities, and cyclical patterns. Understand how sign placements relate to alignment and compatibility rhythms.',
   },
   alternates: { canonical: `${baseUrl}/zodiac` },
 }

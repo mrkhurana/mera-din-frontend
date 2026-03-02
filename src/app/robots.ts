@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '',
     },
-    sitemap: 'https://meradinkaisajayega.online/sitemap.xml',
+    sitemap: 'https://whereskyaligns.com/sitemap.xml',
   }
 }

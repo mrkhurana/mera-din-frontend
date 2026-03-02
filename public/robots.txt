@@ -5,4 +5,4 @@ Allow: /zodiac
 Allow: /compatibility
 Disallow: /api/
 
-Sitemap: https://meradinkaisajayega.online/sitemap.xml
+Sitemap: https://whereskyaligns.com/sitemap.xml
