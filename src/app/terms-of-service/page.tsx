@@ -26,7 +26,7 @@ export default function TermsOfServicePage() {
             2. Description of Service
           </h2>
           <p className="text-sm leading-relaxed text-stone-600">
-            Where Sky Aligns provides tools for generating astrological alignment scores,
+            Where Sky Aligns offers a structured space for exploring astrological alignment scores,
             Moon sign insights, and compatibility readings based on birth details you provide.
             The Site also offers reference content about zodiac signs, elements, modalities,
             and related astrological frameworks. All content is informational in nature.
@@ -74,7 +74,7 @@ export default function TermsOfServicePage() {
           <p className="text-sm leading-relaxed text-stone-600 mb-3">
             You are solely responsible for how you use the information and results provided by
             this Site. Where Sky Aligns is not responsible for any decisions, actions, or
-            outcomes that arise from your use of our content or tools.
+            outcomes that arise from your use of our content or features.
           </p>
           <p className="text-sm leading-relaxed text-stone-600">
             You agree to use this Site only for lawful purposes and in a manner that does not

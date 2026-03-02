@@ -16,7 +16,7 @@ const navItems = [
   { label: 'Compatibility Finder', href: '/compatibility' },
   { label: 'Moon Signs Guide', href: '/moon-signs' },
   { label: 'Zodiac Overview', href: '/zodiac' },
-  { label: 'Weekly Outlook', href: '/weekly', comingSoon: true },
+  { label: 'About', href: '/about' },
 ]
 
 function HamburgerIcon() {
@@ -115,28 +115,16 @@ export function Header() {
 
         {/* Drawer nav */}
         <nav className="flex-1 overflow-y-auto px-3 py-4" aria-label="Drawer navigation">
-          {navItems.map((item) =>
-            item.comingSoon ? (
-              <span
-                key={`${item.href}-${item.label}`}
-                className="flex items-center justify-between px-4 py-3 text-sm font-medium text-stone-400 cursor-default rounded-lg select-none"
-              >
-                {item.label}
-                <span className="text-[10px] font-bold text-yellow-700 bg-yellow-50 border border-yellow-200 px-1.5 py-0.5 rounded tracking-wide">
-                  SOON
-                </span>
-              </span>
-            ) : (
-              <Link
-                key={`${item.href}-${item.label}`}
-                href={item.href}
-                onClick={() => setDrawerOpen(false)}
-                className="flex items-center justify-between px-4 py-3 text-sm font-medium text-stone-700 hover:text-stone-900 hover:bg-stone-50 rounded-lg transition-colors"
-              >
-                {item.label}
-              </Link>
-            )
-          )}
+          {navItems.map((item) => (
+            <Link
+              key={`${item.href}-${item.label}`}
+              href={item.href}
+              onClick={() => setDrawerOpen(false)}
+              className="flex items-center justify-between px-4 py-3 text-sm font-medium text-stone-700 hover:text-stone-900 hover:bg-stone-50 rounded-lg transition-colors"
+            >
+              {item.label}
+            </Link>
+          ))}
         </nav>
 
         {/* Drawer footer */}

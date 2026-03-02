@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-sm leading-relaxed text-stone-600 mb-3">
             Where Sky Aligns operates the website at whereskyaligns.com. This page explains how we
             handle information that is provided or generated when you use our services — including
-            the daily alignment tool, Moon sign finder, compatibility calculator, and zodiac
+            the daily alignment space, Moon sign finder, compatibility finder, and zodiac
             reference pages.
           </p>
           <p className="text-sm leading-relaxed text-stone-600">
@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
           </h2>
           <h3 className="text-sm font-semibold text-stone-700 mt-4 mb-2">Birth Details</h3>
           <p className="text-sm leading-relaxed text-stone-600 mb-3">
-            When you use our alignment or compatibility tools, you are asked to enter a date of
+            When you use our alignment or compatibility features, you are asked to enter a date of
             birth, time of birth, and place of birth. This information is submitted to our
             servers solely to generate your result. We do not retain this data on our servers
             after your result is returned.
@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-sm leading-relaxed text-stone-600">
             We may collect standard usage information such as your IP address, browser type,
             device type, pages visited, and time spent on the site. This is collected via
-            third-party analytics tools and is used only to understand how the site is used
+            third-party analytics services and is used only to understand how the site is used
             and to improve its performance.
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <ul className="text-sm leading-relaxed text-stone-600 space-y-2 list-disc list-inside ml-1">
             <li>Storing your previously entered birth details locally for convenience</li>
-            <li>Analytics cookies used by third-party tools to measure site traffic</li>
+            <li>Analytics cookies used by third-party services to measure site traffic</li>
           </ul>
           <p className="text-sm leading-relaxed text-stone-600 mt-3">
             You can manage or delete cookies and local storage data through your browser settings

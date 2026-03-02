@@ -77,6 +77,7 @@ export default function RootLayout({
           <p className="mb-1">&copy; 2026 Where Sky Aligns. All rights reserved.</p>
           <p className="mb-2">Alignment scores and compatibility readings are based on birth details and are intended for informational purposes only. They do not constitute advice, prediction, or any factual claim.</p>
           <div className="flex justify-center gap-4 mt-2">
+            <a href="/about" className="hover:text-stone-600 transition-colors">About</a>
             <a href="/privacy-policy" className="hover:text-stone-600 transition-colors">Privacy Policy</a>
             <a href="/terms-of-service" className="hover:text-stone-600 transition-colors">Terms of Service</a>
             <a href="/disclaimer" className="hover:text-stone-600 transition-colors">Disclaimer</a>
