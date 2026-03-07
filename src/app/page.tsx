@@ -112,7 +112,6 @@ export default function Home() {
   }
 
   return (
-    <div className="testonly">Testing</div>
     <div className="w-full max-w-sm">
 
         {/* Header */}
