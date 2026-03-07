@@ -71,6 +71,7 @@ export default function RootLayout({
       <body className="overflow-x-hidden bg-[#ede8de] text-stone-900 min-h-full flex flex-col">
         <Header />
         <main className="flex-1 flex items-center justify-center px-4 py-10">
+              <div className="testonly">Testing</div>
           {children}
         </main>
         <footer className="text-center text-xs text-stone-400 py-6 px-4 mt-64 border-t border-stone-200">
