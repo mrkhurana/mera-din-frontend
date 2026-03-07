@@ -112,7 +112,7 @@ export default function Home() {
   }
 
   return (
-    <div class="testonly">Testing</div>
+    <div className="testonly">Testing</div>
     <div className="w-full max-w-sm">
 
         {/* Header */}
